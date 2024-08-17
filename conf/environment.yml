@@ -1,0 +1,9 @@
+name: ml_in_production
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11.9
+  - pip
+  - pip:
+    - -r requirements.txt

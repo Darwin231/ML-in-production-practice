@@ -1,0 +1,9 @@
+logistic_regression:
+  model: LogisticRegression
+  hyperparameters:
+    penalty:
+      type: categorical
+      values:["l1", "l2", "none"]
+
+
+  
