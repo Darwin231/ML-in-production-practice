@@ -7,3 +7,7 @@ scikit-learn==1.5.1
 pandas==2.2.2
 numpy==1.25
 ipykernel
+matplotlib==3.9.2
+seaborn==0.13.2
+PyYAML==6.0.2
+statsmodels==0.14.2

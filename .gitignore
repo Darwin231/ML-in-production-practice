@@ -1,1 +1,5 @@
+## Venv folder
 venv/
+
+## Model ignore
+*.pkl

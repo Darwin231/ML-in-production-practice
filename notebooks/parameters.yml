@@ -1,9 +1,52 @@
-logistic_regression:
+logistic_regression_hpo:
   model: LogisticRegression
   hyperparameters:
     penalty:
       type: categorical
-      values:["l1", "l2", "none"]
-
-
-  
+      values: ['l2', 'none', 'l1', 'elasticnet']
+    dual:
+      type: categorical
+      values: [False, True]
+    tol:
+      type: float
+      range: [1e-6, 1e-2]
+      log: true  # Log-scale search
+    C:
+      type: float
+      range: [0.001, 1000]
+      log: true  # Log-scale search
+    fit_intercept:
+      type: categorical
+      values: [True, False]
+    intercept_scaling:
+      type: float
+      range: [0.1, 10]
+    class_weight:
+      type: categorical
+      values: [None, 'balanced']
+    random_state:
+      type: int
+      values: [42]  # Fixed for reproducibility
+    solver:
+      type: categorical
+      values: ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']
+    max_iter:
+      type: int
+      range: [50, 500]
+    multi_class:
+      type: categorical
+      values: ['auto', 'ovr', 'multinomial']
+    verbose:
+      type: int
+      values: [0]  # Typically fixed to reduce output noise
+    warm_start:
+      type: categorical
+      values: [False, True]
+    n_jobs:
+      type: int
+      values: [None, -1]  # None for single core, -1 for all cores
+    l1_ratio:
+      type: float
+      range: [0.0, 1.0]
+      conditional_on:
+        penalty: 'elasticnet'
