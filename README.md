@@ -25,6 +25,8 @@ For this project, the model was trainned with a simple logistic regresion with G
 
 
 
+
+## Personal Info
 __Author:__ *Darwin Diaz*
 
 *Inspired by the DeepLearningAI course "Machine Learning in production*
