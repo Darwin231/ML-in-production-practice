@@ -29,7 +29,7 @@ For this project, the model was trainned with a simple logistic regresion with G
 ## Personal Info
 __Author:__ *Darwin Diaz*
 
-*Inspired by the DeepLearningAI course "Machine Learning in production*
+*Inspired by the DeepLearningAI course "Machine Learning in production"*
 link to the course: https://www.coursera.org/learn/introduction-to-machine-learning-in-production
 
 
