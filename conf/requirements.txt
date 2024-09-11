@@ -11,3 +11,5 @@ matplotlib==3.9.2
 seaborn==0.13.2
 PyYAML==6.0.2
 statsmodels==0.14.2
+requests==2.32.3
+bs4==0.0.2
