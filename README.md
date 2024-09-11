@@ -23,6 +23,7 @@ For this project, the model was trainned with a simple logistic regresion with G
 
 ##### 3.2.2 Model Deployment
 
+Endpoint creation that calls the pickle model trainned and apply the model into a .csv
 
 
 
